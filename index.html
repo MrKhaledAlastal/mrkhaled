@@ -161,7 +161,6 @@ section {
     margin: 10px;
 }
 
-/* New Style for the About Section */
 /* New Style for the About Section - Enhanced */
 .about {
     background-color: #f8f8f8; /* لون خلفية أفتح وأكثر أناقة */
@@ -212,6 +211,7 @@ section {
     color: #3a6cf4; /* تمييز بعض الكلمات بلون مميز إذا كنت تستخدم <strong> */
     font-weight: 600;
 }
+
 
 .projects {
     background-color: #000016;
@@ -304,6 +304,8 @@ section {
     padding: 0 12px 0 0;
 }
 
+/* Responsive Styles Start Here */
+
 @media (max-width:1023px){
     header{
         padding: 12px 20px;
@@ -321,17 +323,28 @@ section {
         padding: 80px 20px;
     }
 
-    .main-content h2{
+    .main h2{
         font-size: 1em;
     }
 
-    .main-content h3{
+    .main h3{
         font-size: 1.6em;
     }
 
     .content{
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Responsive About Me Section */
+    .about {
+        padding: 80px 20px;
+    }
+    .about .title {
+        font-size: 2.2em;
+    }
+    .about p {
+        font-size: 1.1em;
     }
 
 }
@@ -341,19 +354,43 @@ section {
         font-size: 12px;
     }
 
-    .main-content h2{
+    .main h2{
         font-size: 0.8em;
     }
 
-    .main-content h3{
+    .main h3{
         font-size: 1.4em;
     }
+
+    /* Further Responsive adjustments for About Me */
+    .about .title {
+        font-size: 1.8em;
+    }
+    .about p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    /* Make cards fit mobile screens better */
+    .card, .project-card {
+        width: 95%; 
+    }
+
+    /* Adjust header for small screens */
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        padding-left: 8px;
+    }
+
 }
 
 @media (max-width:300px){
     body{
         font-size: 10px;
-     
     }
 }
 
@@ -385,7 +422,7 @@ section {
     <section class="about" id="about">
         <h2 class="title">About Me</h2>
         <div class="content">
-            <p style="text-align: center; max-width: 800px; font-size: 1.2em; line-height: 1.6;">
+            <p>
                 I am an English teacher with more than 22 years of experience in teaching guidance in Gaza. I specialized in preparing students for final exams with a precise methodology, and my method combines professionalism, academic rigor, and the ability to simplify complex concepts. During my career, I contributed to the graduation of generations of distinguished students who achieved high results, which established my name as one of the experienced and highly qualified teachers in this field.
             </p>
         </div>
@@ -497,5 +534,4 @@ section {
     
 
 </body>
-
 </html>
