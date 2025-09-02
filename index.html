@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Islam Mahfouz</title>
+<style>
+
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #601cfc;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* New Style for the About Section */
+/* New Style for the About Section - Enhanced */
+.about {
+    background-color: #f8f8f8; /* لون خلفية أفتح وأكثر أناقة */
+    padding: 120px 200px; /* زيادة المسافات الداخلية لإضفاء إحساس بالاتساع والفخامة */
+    text-align: center;
+}
+
+.about .title {
+    color: #2c3e50; /* لون أغمق للعناوين لزيادة الفخامة */
+    font-size: 3em; /* تكبير حجم العنوان */
+    font-weight: 700;
+    margin-bottom: 40px; /* زيادة المسافة أسفل العنوان */
+    position: relative;
+    display: inline-block; /* لكي يعمل التسطير بشكل صحيح */
+}
+
+/* إضافة خط تحت العنوان كعنصر زخرفي */
+.about .title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* مسافة الخط من النص */
+    transform: translateX(-50%);
+    width: 60px; /* طول الخط */
+    height: 4px; /* سمك الخط */
+    background-color: #3a6cf4; /* لون الخط */
+    border-radius: 2px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    font-size: 1.3em; /* تكبير حجم الخط للنص الأساسي */
+    line-height: 1.8; /* زيادة تباعد الأسطر لسهولة القراءة */
+    color: #555; /* لون نص أغمق وأكثر دفئًا */
+    max-width: 900px; /* تحديد أقصى عرض للنص لجعله أكثر تنظيمًا */
+    margin: 0 auto; /* توسيط النص */
+    font-weight: 400; /* خط بوزن متوسط لإحساس بالراحة */
+    letter-spacing: 0.5px; /* تباعد بسيط بين الحروف */
+}
+
+/* يمكن إضافة تأثيرات عند التحويم أو عناصر زخرفية إضافية إذا أردت */
+.about p strong {
+    color: #3a6cf4; /* تمييز بعض الكلمات بلون مميز إذا كنت تستخدم <strong> */
+    font-weight: 600;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Mr. Khaled</a>
+        <nav class="navigation">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+   
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm T.Khaled<br><span> English language <br>Teacher </span></h2>
+             
+            <h3>Let's get started and create new style </h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="title">About Me</h2>
+        <div class="content">
+            <p style="text-align: center; max-width: 800px; font-size: 1.2em; line-height: 1.6;">
+                I am an English teacher with more than 22 years of experience in teaching guidance in Gaza. I specialized in preparing students for final exams with a precise methodology, and my method combines professionalism, academic rigor, and the ability to simplify complex concepts. During my career, I contributed to the graduation of generations of distinguished students who achieved high results, which established my name as one of the experienced and highly qualified teachers in this field.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work1.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>King Lear act (3)</span>
+                        <a href="https://youtu.be/QKgCZSKeYYI" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work2.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>reading + unit 6 period 1 past history p84</span>
+                        <a href="https://youtu.be/JlB9iYymnhU" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work3.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>READING + UNIT 6 PERIOD 3 PAGE 88</span>
+                        <a href="https://youtu.be/fFJNYPz7g4M" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work4.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>reading + unit 4 period 3 p 60</span>
+                        <a href="https://youtu.be/Qejpo5lDR3o" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work5.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Reading + \ Unit (4) Period (4)</span>
+                        <a href="https://youtu.be/EjD6Rt4NzBU" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work6.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writing & Video Production</p>
+                    <strong class="project-title">
+                        <span>Reading Plus Unit (1) Period (1)/ Reading (1/2) Making Changes (Part 1)</span>
+                        <a href="https://youtu.be/qaWgWwR6c5M" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact Me</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <a href="https://wa.me/+972599716008"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+972 59 971 6008</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <a href="mailto:khaledalastal@gmail.com"><i class="fas fa-envelope"></i></a>
+                    
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>khaledalastal@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>
